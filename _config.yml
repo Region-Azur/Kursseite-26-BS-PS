@@ -23,7 +23,7 @@ defaults:
   - scope:
       path: content
     values:
-      layout: page
+      layout: content_page
       toc: true
       panel_includes:
         - toc

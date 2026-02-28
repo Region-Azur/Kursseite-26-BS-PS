@@ -1,0 +1,41 @@
+---
+layout: page
+---
+
+<button id="copy-link" style="display: none;"></button>
+
+<article class="px-1" data-toc="true">
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // Find the right-hand panel where tags usually sit
+    var sidebarPanel = document.querySelector("#panel-wrapper .access");
+    
+    // Inject the TOC HTML box if it isn't already there
+    if (sidebarPanel && !document.getElementById("toc-wrapper")) {
+      sidebarPanel.insertAdjacentHTML("afterend", "<section id=\"toc-wrapper\"><h2 class=\"panel-heading ps-3 pt-2 mb-2\">Contents</h2><nav id=\"toc\"></nav></section>");
+    }
+
+    // Initialize Tocbot to scan the .content div and build the links
+    if (typeof tocbot !== "undefined" && document.getElementById("toc-wrapper")) {
+      tocbot.init({
+        tocSelector: "#toc",
+        contentSelector: ".content",
+        ignoreSelector: "[data-toc-skip]",
+        headingSelector: "h2, h3, h4",
+        orderedList: false,
+        scrollSmooth: false
+      });
+    }
+    
+  });
+/*]]>*/
+</script>
