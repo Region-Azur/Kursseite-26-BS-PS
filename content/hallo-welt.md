@@ -1,5 +1,6 @@
 ---
 title: Hallo Welt
+layout: content_page
 sidebar: true
 sidebar_title: Groups
 toc: true
