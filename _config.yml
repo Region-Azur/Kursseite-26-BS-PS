@@ -28,7 +28,6 @@ defaults:
       panel_includes:
         - toc
       permalink: /:basename
-  - scope:
-      path: _tabs
-    values:
-      layout: page
+collections:
+  tabs:
+    output: true
