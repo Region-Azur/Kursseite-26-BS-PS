@@ -4,7 +4,7 @@ sidebar: true
 sidebar_title: Groups
 toc: true
 ---
-# Das ist ein Titel
+## Das ist ein Titel
 
 ## das is t ein Untertitel
 
