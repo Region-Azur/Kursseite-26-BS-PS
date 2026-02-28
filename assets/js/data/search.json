@@ -18,7 +18,7 @@ layout: none
     {% assign first_item = false %}
   {% endfor %}
 
-  {% assign custom_pages = site.pages | where: "layout", "content_page" %}
+  {% assign custom_pages = site.pages | where: "layout", "page" | where_exp: "page", "page.url contains '/content'" %}
   {% for page in custom_pages %}
     {% unless first_item %},{% endunless %}
     {

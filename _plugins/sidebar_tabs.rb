@@ -14,6 +14,7 @@ module Jekyll
       site.pages.each do |page|
         next unless page.data['sidebar']
         next unless page.url
+        next unless page.url.start_with?('/content') || page.url == '/'
 
         title = (page.data['sidebar_title'] || page.data['title'] || '').strip
         next if title.empty?

@@ -1,8 +1,8 @@
 title: Basis PS 26
 tagline: Built with Decap CMS
 description: A minimal, responsive and feature-rich Jekyll theme for technical writing.
-baseurl: /Kursseite-26-BS-PS
-url: https://Region-Azur.github.io/Kursseite-26-BS-PS
+baseurl: ''
+url: ''
 author: Region AZUR
 social:
   name: Region AZUR
@@ -23,7 +23,7 @@ defaults:
   - scope:
       path: content
     values:
-      layout: content_page
+      layout: page
       toc: true
       panel_includes:
         - toc
