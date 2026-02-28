@@ -8,8 +8,6 @@ toc: true
 
 ## das is t ein Untertitel
 
-
-
-und hier ein Bild
+und hier ein Bild oder?
 
 ![](static/uploads/meme.jpg)
